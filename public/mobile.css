@@ -5,4 +5,7 @@
     .header_elements {
     	margin-left: 0 !important;
     }
+    .decoration_panel {
+    	display: none;
+    }
 }

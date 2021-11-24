@@ -29,7 +29,7 @@
 		align-items: center;
 	}
 	#logo {
-		height: 100%;
+		height: 80%;
 	}
 	.header_elements {
 		margin-left: 15px;
@@ -65,6 +65,7 @@
 		height: 100%;
 	}
 	.profile > img {
+		border: 2px solid white;
 		cursor: pointer;
 		object-fit: cover;	
 		width: 40px;
