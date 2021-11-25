@@ -8,4 +8,7 @@
     .decoration_panel {
     	display: none;
     }
+    footer {
+    	text-align: center;
+    }
 }

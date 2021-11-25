@@ -20,6 +20,7 @@
 <script type="text/javascript"></script>
 <style type="text/css">
 	header {
+		position: fixed;
 		color: white;
 		height: 50px;
 		width: 100%;
