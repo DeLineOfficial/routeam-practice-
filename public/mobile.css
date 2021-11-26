@@ -11,4 +11,7 @@
     footer {
     	text-align: center;
     }
+    .sidebar-conteiner {
+        display: none;
+    }
 }

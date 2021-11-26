@@ -1,5 +1,6 @@
 <template>
 	<header>
+		<img src="../assets/logo.png" id="logo">
 		<div class="header_elements">
 			<div id="burger">
 				<div></div>

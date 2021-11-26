@@ -1,19 +1,17 @@
 <template>
-	<div class="sidebar">
-		<div class="header-sidebar">
-			<img src="../assets/logo.png" id="logo">
-		</div>
+	<div class="sidebar-disable">
+		
 	</div>
 </template>
 <script type="text/javascript">
 	
 </script>
 <style type="text/css">
-	.sidebar {
+	.sidebar-disable {
 		background: white;
 		box-shadow: 3px 3px 10px black;
 		width: 70px;
-		height: 100vh;
+		height: 100%;
 		text-align: center;
 	}
 	.header-sidebar {
