@@ -4,6 +4,9 @@
 		<SideBar/>
 		<div class="main_content">
 			<div class="main_content-section">
+				<div class="crumbs">
+					<span>Продажи</span>
+				</div>
 			</div>
 			<footerMenu/>
 		</div>
@@ -41,5 +44,16 @@
 		height: 100%;
 		margin: 50px 0 0 0;
 		flex: 1 0 auto;
+	}
+	.crumbs {
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 60px;
+		background: white;
+		padding-left: 30px;
+		font-weight: 600;
+		color: #626262;
 	}
 </style>

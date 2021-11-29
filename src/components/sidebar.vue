@@ -10,6 +10,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="sidebar_list">
+			<i class="fas fa-history"></i>
+		</div>
 	</div>
 </template>
 <script type="text/javascript">
@@ -62,6 +65,9 @@
 	.sidebar_profile-menu > img {
 		margin-left: auto;
 		height: 10px;
+	}
+	.sidebar_list {
+		color: #626262;
 	}
 
 </style>
