@@ -1,5 +1,5 @@
 @media only screen and (max-device-width: 1024px) {
-    header > #logo {
+    header > .logotype {
     	display: none;
     }
     .header_elements {

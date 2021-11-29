@@ -1,6 +1,8 @@
 <template>
 	<header>
-		<img src="../assets/logo.png" id="logo">
+		<div class="logotype">
+			<img src="../assets/logo.png" id="logo">
+		</div>
 		<div class="header_elements">
 			<div id="burger">
 				<div></div>
@@ -29,8 +31,18 @@
 		display: flex;
 		align-items: center;
 	}
+	.logotype {
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+		height: 50px;
+	}
 	#logo {
+		margin: 0 auto;
 		height: 80%;
+	}
+	#logo-text {
+		margin-left: 15px;
 	}
 	.header_elements {
 		margin-left: 15px;

@@ -5,13 +5,13 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/sales',
-    name: 'Sales',
-    component: () => import('../views/Sales.vue')
+    path: '/main',
+    name: 'Главная',
+    component: () => import('../views/main.vue')
   },
   {
     path: '/',
-    name: 'Sign_in',
+    name: 'Вход',
     component: () => import('../views/Sign_in.vue')
   }
 

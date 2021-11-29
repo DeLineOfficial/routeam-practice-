@@ -1,9 +1,9 @@
 <template>
 	<div class="content">
 		<Header/>
-		<div class="main-content">
-			<div class="Sales">
-				
+		<SideBar/>
+		<div class="main_content">
+			<div class="main_content-section">
 			</div>
 			<footerMenu/>
 		</div>
@@ -13,11 +13,14 @@
 
 	import Header from '@/components/Header.vue';
 	import footerMenu from '@/components/footer_menu.vue';
+	import SideBar from '@/components/sidebar.vue';
+
 	export default {
 		name: 'Sales',
 		components: {
 			Header,
 			footerMenu,
+			SideBar
 		}
 	}
 </script>
@@ -26,7 +29,7 @@
 		min-height: 100vh;
 		display: flex;
 	}
-	.main-content {
+	.main_content {
 		background: #e1ebed;
 		width: 100%;
 		min-height: 100vh;
@@ -34,8 +37,9 @@
 		flex-direction: column; 
 		height: -webkit-fill-available;
 	}
-	.Sales {
-		margin: 60px 10px 10px 10px;
+	.main_content-section {
+		height: 100%;
+		margin: 50px 0 0 0;
 		flex: 1 0 auto;
 	}
 </style>
