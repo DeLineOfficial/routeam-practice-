@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="profile">
-			<img src="../assets/profile-logo.jpg">
+			<img src="../assets/profile/avatar.jpg">
 		</div>
 	</header>
 </template>
