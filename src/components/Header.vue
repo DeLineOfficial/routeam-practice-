@@ -1,7 +1,10 @@
 <template>
 	<header>
 		<div class="logotype">
-			<img src="../assets/logo.png" id="logo">
+			<div>
+				<img src="../assets/logo.png" id="logo">
+				<span id="logo-text">БРОНЕВ</span>
+			</div>
 		</div>
 		<div class="header_elements">
 			<div id="burger">
@@ -27,18 +30,25 @@
 		height: 50px;
 		width: 100%;
 		background: black;
-		padding: 0 15px;
+		padding: 0 15px 0 0;
 		display: flex;
 		align-items: center;
 	}
 	.logotype {
+		width: 252px;
 		font-size: 24px;
 		display: flex;
 		align-items: center;
 		height: 50px;
 	}
-	#logo {
+	.logotype > div {
+		display: flex;
+		align-items: center;
+		height: 50px;
 		margin: 0 auto;
+
+	}
+	#logo {
 		height: 80%;
 	}
 	#logo-text {

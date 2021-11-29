@@ -15,7 +15,7 @@
 	import Header from '@/components/Header.vue';
 	import footerMenu from '@/components/footer_menu.vue';
 	import SideBar from '@/components/sidebar.vue';
-	import sales from '@/components/sales.vue'
+	import sales from '@/components/sections/sales.vue'
 
 	export default {
 		name: 'Sales',
