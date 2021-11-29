@@ -6,8 +6,8 @@
 		<div class="sales_content">
 			<div class="content_panel">
 				<input type="text" name="search" class="form-control search">
-				<button class="btn btn-primary">btn</button>
-				<button class="btn btn-danger">btn</button>
+				<button class="btn btn-primary">Поиск</button>
+				<button class="btn btn-danger">Очистить</button>
 			</div>
 		</div>
 	</div>
