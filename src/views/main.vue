@@ -4,9 +4,7 @@
 		<SideBar/>
 		<div class="main_content">
 			<div class="main_content-section">
-				<div class="crumbs">
-					<span>Продажи</span>
-				</div>
+				<sales/>
 			</div>
 			<footerMenu/>
 		</div>
@@ -17,13 +15,15 @@
 	import Header from '@/components/Header.vue';
 	import footerMenu from '@/components/footer_menu.vue';
 	import SideBar from '@/components/sidebar.vue';
+	import sales from '@/components/sales.vue'
 
 	export default {
 		name: 'Sales',
 		components: {
 			Header,
 			footerMenu,
-			SideBar
+			SideBar,
+			sales,
 		}
 	}
 </script>
