@@ -11,12 +11,39 @@
 			</div>
 		</div>
 		<div class="sidebar_list">
-			<i class="fas fa-history"></i>
+			<div class="sidebar_list-content">
+				<div v-on:click="ShowList()" class="sidebar_list-element">
+					<img src="../assets/book.png">
+					<p>Справочник</p>
+					<img src="../assets/chevron-list.png">
+				</div>
+				<ul v-if="List == true">
+					<li v-on:click="$parent.activeTab = 'drivers'">Водители</li>
+					<li>Направления</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </template>
 <script type="text/javascript">
-	
+	export default {
+		name: 'sidebar',
+		data() {
+			return {
+				List: false,
+			}
+		},
+		methods: {
+			ShowList() {
+				if (this.List == false) {
+					this.List = true
+				}
+				else {
+					this.List = false;
+				}
+			}
+		}
+	}
 </script>
 <style type="text/css">
 	.sidebar-active {
@@ -67,7 +94,31 @@
 		height: 10px;
 	}
 	.sidebar_list {
+		margin-top: 30px;
 		color: #626262;
+		display: flex;
+		flex-direction: column;
+	}
+	.sidebar_list-content {
+		margin: 0 auto;
+		width: 80%;
+	}
+	.sidebar_list-element {
+		cursor: pointer;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.sidebar_list-element > p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.sidebar_list > div > ul {
+		margin-left: 30px;
+	}
+	.sidebar_list-element > img {
+		height: 10px;
 	}
 
 </style>

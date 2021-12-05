@@ -13,8 +13,8 @@
 				<div></div>
 			</div>
 			<div class="header_elements-adress">
-				<a href="/sales">Продажи</a>
-				<a href="#">Маршруты</a>
+				<a href="#">Продажи</a>
+				<a href="#" v-on:click="$parent.activeTab = 'routes'">Маршруты</a>
 			</div>
 		</div>
 		<div class="profile">
@@ -22,7 +22,11 @@
 		</div>
 	</header>
 </template>
-<script type="text/javascript"></script>
+<script type="text/javascript">
+	export default {
+		name: 'header',
+	}
+</script>
 <style type="text/css">
 	header {
 		position: fixed;

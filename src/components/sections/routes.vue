@@ -1,9 +1,9 @@
 <template>
 	<div class="sales">
 		<div class="crumbs">
-			<span>Продажи</span>
+			<span>Маршруты</span>
 		</div>
-		<div class="sales_content">
+		<div class="section_content">
 			<div class="content_panel">
 				<input type="text" name="search" class="form-control search">
 				<button class="btn btn-primary">Поиск</button>
@@ -37,29 +37,5 @@
 	
 </script>
 <style type="text/css">
-	.sales_content {
-		margin: 15px;
-		background: white;
-		border-radius: 10px;
-	}
-	.content_panel {
-		padding: 15px;
-		display: flex;
-	}
-	.content_panel > button {
-		margin-left: 15px;
-	}
-	.search {
-		width: 300px;
-	}
-	table {
-		margin: 15px;
-		width: 100%;
-	}
-	th {
-		border-bottom: 1px solid #eee; 
-	}
-	th, td {
-		padding: 10px 0;
-	}
+
 </style>

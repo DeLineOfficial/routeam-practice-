@@ -4,7 +4,8 @@
 		<SideBar/>
 		<div class="main_content">
 			<div class="main_content-section">
-				<sales/>
+				<routes v-if="activeTab == 'routes'"/>
+				<drivers v-if="activeTab == 'drivers'"/>
 			</div>
 			<footerMenu/>
 		</div>
@@ -15,7 +16,8 @@
 	import Header from '@/components/Header.vue';
 	import footerMenu from '@/components/footer_menu.vue';
 	import SideBar from '@/components/sidebar.vue';
-	import sales from '@/components/sections/sales.vue'
+	import routes from '@/components/sections/routes.vue';
+	import drivers from '@/components/sections/drivers.vue'
 
 	export default {
 		name: 'Sales',
@@ -23,7 +25,19 @@
 			Header,
 			footerMenu,
 			SideBar,
-			sales,
+			routes,
+			drivers,
+
+		},
+		data() {
+			return {
+				activeTab: 'routes',
+			}
+		},
+		methods: {
+			toggleVisible() {
+
+			}
 		}
 	}
 </script>

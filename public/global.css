@@ -1,0 +1,45 @@
+ul {
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+}
+li {
+	cursor: pointer;
+	margin: 5px 0;
+	padding: 0;
+}
+p {
+	margin: 0;
+}
+li > a {
+	color: #626262;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+table {
+	margin: 15px;
+	width: 100%;
+}
+th {
+	border-bottom: 1px solid #eee; 
+}
+th, td {
+	padding: 10px 0;
+}
+.content_panel {
+	padding: 15px;
+	display: flex;
+}
+.content_panel > button {
+	margin-left: 15px;
+}
+.search {
+	width: 300px;
+}
+.section_content {
+	margin: 15px;
+	background: white;
+	border-radius: 10px;
+}
