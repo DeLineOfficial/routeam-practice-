@@ -1,5 +1,6 @@
 <template>
 	<div class="content">
+		<modal v-if="activeModal == true"/>
 		<div class="decoration_panel">
 			<img src="../assets/bus.jpg">
 		</div>
@@ -8,14 +9,32 @@
 				<span>Добро пожаловать в систему управления продажами БРОНЕВ</span>
 				<div class="signin_authorization">
 					<span>Для продолжениия работы необходимо пройти авторизацию</span>
-					<a href="http://core.t2.routeam.ru/auth/sso" target="_blank"><button class="btn btn-primary">Войти</button></a>
+					<button class="btn btn-primary" v-on:click="openModal()">Войти</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
 <script type="text/javascript">
-	
+	import modal from '@/components/sign_in.vue';
+	export default {
+		name: 'signin',
+		components: {
+			modal,
+		},
+		data() {
+			return {
+				activeModal: false,
+			} 
+		},
+		methods: {
+			openModal() {
+				if (this.activeModal == false) {
+					this.activeModal = true
+				}
+			}
+		}
+	}
 </script>
 <style type="text/css">
 	.content {

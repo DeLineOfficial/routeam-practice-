@@ -12,7 +12,7 @@
 	</div>
 </template>
 <script type="text/javascript">
-
+	
 	import Header from '@/components/Header.vue';
 	import footerMenu from '@/components/footer_menu.vue';
 	import SideBar from '@/components/sidebar.vue';
